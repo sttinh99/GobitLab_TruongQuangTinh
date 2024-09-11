@@ -55,7 +55,7 @@ export default function SearchPage({
         <SelectedFeild
           label="Tỉnh thành"
           name="province"
-          data={data.provinces}
+          data={data?.provinces ||[]}
           setFormDataSearch={setFormDataSearch}
           setSearchObj={setSearchObj}
         />

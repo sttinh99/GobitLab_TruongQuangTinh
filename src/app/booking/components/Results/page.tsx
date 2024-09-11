@@ -5,7 +5,7 @@ export default function ResultsPage({ results }: any) {
         Cho thuê phòng trọ, cho thuê nhà trọ, tìm phòng trọ
       </div>
       <div className="mb-8">Cho thuê phòng trọ số 1 Việt Nam</div>
-      {results.length ? (
+      {results?.length ? (
         <div className="container mx-auto pb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {results.map((item: any) => (
