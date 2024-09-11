@@ -24,6 +24,7 @@ export default function SelectedFeild({
     setSearchObj((prev: any) => ({
       ...prev,
       province: e.target.value,
+      district:""
     }));
   };
   const handleChangeDistrict = (e: any) => {
