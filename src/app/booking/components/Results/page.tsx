@@ -9,7 +9,7 @@ export default function ResultsPage({ results }: any) {
         <div className="container mx-auto pb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {results.map((item: any) => (
-              <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div key={item.title} className="bg-white shadow-md rounded-lg overflow-hidden">
                 <img
                   className="w-full h-48 object-cover"
                   src="https://static123.com/phongtro123/uploads/images/thumbs/450x300/fit/2020/08/03/z2007085821510-1c5f88e7607b8437fadb01dc77adf5ab_1596463424.jpg"
